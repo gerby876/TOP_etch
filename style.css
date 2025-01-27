@@ -2,7 +2,7 @@
     border-style: solid;
     background-color: pink;
     width: 960px;
-    height: auto;
+    height: 960px;
     max-height: 960px;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@
 }
 
 .row {
-    height: 100px;
     border-style: solid;
     display: flex;
+    flex: 1;
 }
