@@ -12,14 +12,12 @@
     height: 100px;
     width: 100px;
     border-style: solid;
-    flex-grow: 1;
-    flex-shrink: 1;
+    flex: 1;
 }
 
 .row {
     height: 100px;
-    width: 100px;
     border-style: solid;
-    flex-grow: 1;
-    flex-shrink: 1;
+    display: flex;
+    flex: 1
 }
