@@ -1,7 +1,7 @@
 const container = document.querySelector(".container");
 
 function creategrid(numBoxes) {
-    for (i=0; i<numBoxes; i++) {
+    for (x=0; x<numBoxes; x++) {
         const row = document.createElement("div");
         row.classList.add("row")
         container.appendChild(row)
