@@ -1,0 +1,16 @@
+.container {
+    border-style: solid;
+    background-color: pink;
+    width: 960px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
