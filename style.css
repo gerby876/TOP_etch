@@ -3,14 +3,13 @@
     background-color: pink;
     width: 960px;
     height: auto;
+    max-height: 960px;
     display: flex;
     flex-direction: column;
    
 }
 
 .box {
-    height: 100px;
-    width: 100px;
     background-color: blue;
     border-style: dashed;
     border-color: white;
