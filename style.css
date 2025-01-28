@@ -1,6 +1,5 @@
 .container {
     border-style: solid;
-    background-color: pink;
     width: 960px;
     height: 960px;
     max-height: 960px;
@@ -10,14 +9,14 @@
 }
 
 .box {
-    background-color: blue;
-    border-style: dashed;
-    border-color: white;
     flex: 1;
 }
 
 .row {
-    border-style: solid;
     display: flex;
     flex: 1;
+}
+
+.color {
+    background-color: blue;
 }

@@ -1,10 +1,9 @@
 const container = document.querySelector(".container");
 
-const button = document.createElement("button")
+const button = document.createElement("button");
 button.textContent = "New Grid"
 button.addEventListener("click", () => {
     const childCount = container.childElementCount
-    console.log(childCount)
     if (childCount>1) {
         removeRows(childCount)
     }
@@ -16,13 +15,14 @@ button.addEventListener("click", () => {
 })
 container.appendChild(button)
 
+
 function removeRows(childCount) {
     const rows = document.getElementsByClassName("row");
-    console.log(rows)
     for (y=0; y<rows.length; y) {
         container.removeChild(container.lastChild);
     }
 }
+
 
 function createGrid(numBoxes) {
     for (x=0; x<numBoxes; x++) {
@@ -33,9 +33,13 @@ function createGrid(numBoxes) {
             for (i=0; i<numBoxes; i++) {
                 const box = document.createElement("div");
                 box.classList.add("box");
+                box.addEventListener("mouseover", (e) => {
+                    box.classList.add("color");
+                });
                 row.appendChild(box);
             }
         }
         createbox(numBoxes)
     }
 }
+
